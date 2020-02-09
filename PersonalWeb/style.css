@@ -8,6 +8,13 @@ body{
     color: snow;
 }
 
+.snow-color{
+    color: snow !important;
+}
+
+.snow-color:hover{
+    font-size: 3em;
+}
 
 .header-path{
     color: snow;
@@ -55,6 +62,7 @@ a.active{
 }
 
 .devicon-github-plain{
+    /* color: snow !important; */
     font-size: 30px;
 }
 
@@ -63,7 +71,7 @@ a.active{
     width: 50px !important;
 }
 
-p, h1, h3, h4, label{
+p, h1,h2, h3, h4, label{
     color: snow;
 }
 
