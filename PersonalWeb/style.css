@@ -48,6 +48,16 @@ a.active{
     color:black;
 }
 
+#greeting-card{
+    background-color:rgba(0,0,0,0.3);
+    /* opacity: 0.4; */
+    color: snow !important;
+}
+
+.devicon-github-plain{
+    font-size: 30px;
+}
+
 .owl-prev, .owl-next{
     background-color:snow !important;
     width: 50px !important;
