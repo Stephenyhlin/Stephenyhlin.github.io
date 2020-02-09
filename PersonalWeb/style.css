@@ -18,6 +18,11 @@ body{
     filter: brightness(85%);
 }
 
+a.active{
+    border-top: 3px solid snow;
+    color:snow;
+}   
+
 #header-brand{
     font-size: 24px;
 }
@@ -39,6 +44,14 @@ body{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,250,250, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
   
+.card-text{
+    color:black;
+}
+
+.owl-prev, .owl-next{
+    background-color:snow !important;
+    width: 50px !important;
+}
 
 p, h1, h3, h4, label{
     color: snow;

@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <title>Stephen Lin</title>
   </head>
   <body>
     <canvas id="canvas"></canvas>
     <div class="container-fluid d-flex flex-column h-100 min-vh-100 p-0 w-100">
         <!-- Create navigation bar -->
-        <nav class="navbar navbar-expand-lg header sticky-top">
-            <a class="navbar-brand header-path" id="header-brand" href="#">Stephen</a>
+        <nav class="navbar navbar-expand-lg header sticky-top" id="menu">
+            <a class="navbar-brand header-path scrollItem" id="header-brand" href="#home">Stephen</a>
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,44 +26,148 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link header-path" href="#">Project <span class="sr-only">(current)</span></a>
+                        <a class="nav-link header-path scrollItem" href="#project">Project </a>
+                    <li class="nav-item">
+                        <a class="nav-link header-path scrollItem" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link header-path" href="#">Experience</a>
+                        <a class="nav-link header-path scrollItem" href="#contact">Contact me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link header-path" href="#">Contact me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link header-path" href="#">Resume</a>
+                        <a class="nav-link header-path scrollItem" href="#resume">Resume</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
         <div class="d-flex row flex-grow-1 w-100 m-0 flex-column p-10">
-            <section class="row min-vh-100 w-100 d-flex flex-column">
-                <div class="w-100 m-20 align-self-center flex-grow-1 d-flex flex-column align-items-center justify-content-center">
+            <section class="row min-vh-100 w-100 d-flex flex-column" id="home">
+                <div class="w-100 m-20 flex-grow-1 d-flex flex-column align-items-center">
                     <h3 class="w-100 text-center">About me</h3>
                     <p class="w-100 text-center"> Some information about me will be placed here</p>
                     <p>Gotta add linkedin and github and scrolling and progress bar</p>
                 </div>
             </section>
-            <section class="row min-vh-100 w-100 d-flex flex-column">
-                <div class="w-100 m-20 align-self-center flex-grow-1 d-flex flex-column align-items-center justify-content-center">
-                    <h3 class="w-100 text-center">Project</h3>
+            <section class="row min-vh-100 w-100 d-flex flex-column" id="project">
+                <div class="w-100 m-20 align-self-center flex-grow-1 d-flex flex-column align-items-center">
+                    <h3 class="w-100 text-center mt-5">Project</h3>
+                    <div class="container mt-5 mb-5 w-100">
+                        <div class="owl-carousel owl-theme">
+                                <div class="ml-2 mr-2">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            Personal Website
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Somestuff</h5>
+                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <a href="https://github.com/SteveMunch01/SteveMunch01.github.io" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ml-2 mr-2">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            Poke-Help
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Special title treatment</h5>
+                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ml-2 mr-2">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            Ocra
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Special title treatment</h5>
+                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ml-2 mr-2">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            PlaceHolder rn
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Special title treatment</h5>
+                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    
                     <p> Use the Owl Carousel library to make projects</p>
                 </div>
             </section>
-            <section class="row min-vh-100 w-100 d-flex flex-column">
-                <div class="w-100 m-20 align-self-center flex-grow-1 d-flex flex-column align-items-center justify-content-center">
-                    <h3 class="w-100 text-center">Experience</h3>
+            <section class="row min-vh-100 w-100 d-flex flex-column" id="experience">
+                <div class="w-100 m-20 align-self-center flex-grow-1 d-flex flex-column align-items-center">
+                    <h3 class="w-100 text-center mt-5">Experience</h3>
+                    <div class="container mt-5 mb-5 w-100">
+                            <div class="owl-carousel owl-theme">
+                                    <div class="ml-2 mr-2">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                Personal Website
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Somestuff</h5>
+                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                                <a href="https://github.com/SteveMunch01/SteveMunch01.github.io" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ml-2 mr-2">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                Poke-Help
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Special title treatment</h5>
+                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ml-2 mr-2">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                Ocra
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Special title treatment</h5>
+                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ml-2 mr-2">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                PlaceHolder rn
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Special title treatment</h5>
+                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
                     <p> Use the Owl Carousel library to make projects</p>
                 </div>
             </section>
-            <section class="row min-vh-100 w-100 d-flex flex-column">
-                <div class="w-100 m-20 align-self-center flex-grow-1 d-flex flex-column align-items-center justify-content-center">
-                    <h3 class="w-100 text-center">Contact me</h3>
+            <section class="row min-vh-100 w-100 d-flex flex-column" id="contact">
+                <div class="w-100 m-20 align-self-center flex-grow-1 d-flex flex-column align-items-center">
+                    <h3 class="w-100 text-center mt-5">Contact me</h3>
                     <h4 class="w-100 text-center">If you have any question, or would like to connect, please send me a message using the following forum.</h4>
                     <br>
                     <br>
@@ -87,9 +193,9 @@
                     </div>    
                 </div>
             </section>
-            <section class="row min-vh-100 w-100 d-flex flex-column">
+            <section class="row min-vh-100 w-100 d-flex flex-column" id="resume">
                 <div class="w-100 m-20 align-self-center flex-grow-1 d-flex flex-column align-items-center justify-content-center">
-                    <h3 class="w-100 text-center">Resume</h3>
+                    <h3 class="w-100 text-center mt-5">Resume</h3>
                     <button type="button" class="btn btn-light"> :)</button>
                 </div>
             </section>
@@ -107,5 +213,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
     <script src="component/scripts/stars.js"></script>
+    <script src="component/scripts/scroll.js"></script>
+    <script src="component/scripts/carousel.js"></script>
 </body>
 </html>
