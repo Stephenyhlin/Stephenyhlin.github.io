@@ -1,23 +1,16 @@
+/* Font used */
 body{
     font-family: 'Roboto', sans-serif;
 }
 
-
+/* Colors */
 .header{
     background: black;
     color: snow;
 }
 
-.snow-color{
+.snow-color, .header-path, p, h1,h2, h3, h4, label{
     color: snow !important;
-}
-
-.snow-color:hover{
-    font-size: 3em;
-}
-
-.header-path{
-    color: snow;
 }
 
 .header-path:hover{
@@ -27,32 +20,11 @@ body{
 
 a.active{
     border-top: 3px solid snow;
-    color:snow;
-}   
-
-#header-brand{
-    font-size: 24px;
-}
+    /* color:snow; */
+} 
 
 .transbox{
-    background-color: snow;
-    opacity: 0.3;
-}
-
-.form-stuff{
-    width: 60% !important;
-}
-
-.button-size{
-    width: 30% !important;
-}
-
-.custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,250,250, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
-  
-.card-text{
-    color:black;
+    background-color: rgb(0,0,0,0.3);
 }
 
 #greeting-card{
@@ -61,9 +33,9 @@ a.active{
     color: snow !important;
 }
 
-.devicon-github-plain{
-    /* color: snow !important; */
-    font-size: 30px;
+.btn .snow-color:hover{
+    /* color: snow; */
+    filter: brightness(85%);
 }
 
 .owl-prev, .owl-next{
@@ -71,10 +43,42 @@ a.active{
     width: 50px !important;
 }
 
-p, h1,h2, h3, h4, label{
-    color: snow;
+/* Font sizes */
+.icon:hover{
+    font-size: 3em;
 }
 
+#header-brand{
+    font-size: 24px;
+}
+
+.fixed-height{
+    height: 30px;
+}
+
+.devicon-github-plain{
+    /* color: snow !important; */
+    font-size: 30px;
+}
+
+/* Width and overflow sizes */
+.overflow-scroll{
+    overflow: scroll !important;
+}
+.form-stuff{
+    width: 60% !important;
+}
+
+.button-size{
+    width: 30% !important;
+}
+
+/* Icons */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,250,250, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+/* Canvas styling information */
 canvas {
     background: black;
     position: fixed;

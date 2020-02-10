@@ -17,9 +17,9 @@
   </head>
   <body>
     <canvas id="canvas"></canvas>
-    <div class="container-fluid d-flex flex-column h-100 min-vh-100 p-0 w-100">
+    <div class="container-fluid min-vh-100 p-0 w-100 d-flex flex-column justify-content-center">
         <!-- Create navigation bar -->
-        <nav class="navbar navbar-expand-lg header sticky-top" id="menu">
+        <nav class="navbar navbar-expand-lg w-100 header sticky-top" id="menu">
             <a class="navbar-brand header-path scrollItem" id="header-brand" href="#home">Stephen</a>
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,13 +42,14 @@
             </div>
         </nav>
 
-        <div class="d-flex row flex-grow-1 w-100 m-0 flex-column p-10">
-            <section class="row min-vh-100 w-100 d-flex flex-column align-self-center" id="home">
-                <div class="w-100 m-20 flex-grow-1 d-flex flex-column align-items-center justify-content-center">
+        <div class="d-flex w-100 flex-column overflow-scroll flex-grow-1">
+
+            <section class="min-vh-100 w-100 d-flex flex-column" id="home">
+                <div class="w-100 m-20 d-flex flex-column flex-grow-1 align-items-center justify-content-center">
                     <div class="row h-25 w-100 justify-content-center">
                         <div class="w-50 h-50 card" id="greeting-card">
                             <div class="card-header">
-                                <h1 class="w-100 text-center">
+                                <h1 class="w-100 text-center" id="main-title">
                                         Stephen Lin
                                 </h1>
                             </div>
@@ -59,177 +60,203 @@
                         <div class="w-50 h-50 card" id="greeting-card">
                             <div class="card-body text-center">
                                     <h5 class="card-title">3A Computer Engineering </h5>
-                                    <h5 class="card-title">Universirty of Waterloo </h5>
+                                    <h5 class="card-title">University of Waterloo </h5>
                                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-center fixed-height">
                                 <a href="https://www.linkedin.com/in/stephen-lin-869584150/" target="_blank" class="btn">
-                                        <i class="fab fa-linkedin-in fa-2x snow-color"></i>
+                                    <i class="fab fa-linkedin-in fa-2x snow-color icon"></i>
                                 </a>
                                 <a href="https://github.com/SteveMunch01" class="btn" target="_blank">
-                                    <i class="devicon-github-plain colored snow-color"></i>
+                                    <i class="devicon-github-plain colored snow-color icon"></i>
                                 </a>
-                                <a href="#" target="" class="btn">
-                                    <i class="far fa-file-pdf fa-2x snow-color"></i>
+                                <a href="/assests/StephenLinResumeFall2019.pdf" target="_blank" class="btn">
+                                    <i class="far fa-file-pdf fa-2x snow-color icon" ></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="row min-vh-100 w-100 d-flex flex-column" id="project">
-                <div class="w-100 m-20 align-self-center flex-grow-1 d-flex flex-column align-items-center justify-content-around">
-                    <h2 class="w-100 text-center mt-5">Project</h2>
-                    <div class="container-fluid h-100 mt-5 mb-5 w-100 flex-grow-1">
+
+            <section class="min-vh-100 w-100 d-flex" id="project">
+                <div class="w-100 d-flex flex-grow-1 flex-column align-items-center">
+                    <h1 class="w-100 text-center my-5">Project</h1>
+                    <div class="mt-5 mb-5 w-100 h-50">
                         <div class="owl-carousel owl-theme">
                                 <div class="ml-2 mr-2">
-                                    <div class="card">
+                                    <div class="card border border-light transbox snow-color">
                                         <div class="card-header">
-                                            Personal Website
+                                            <h2 class="w-100 text-center">
+                                                Personal Website
+                                            </h2>
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title">Somestuff</h5>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                            <a href="https://github.com/SteveMunch01/SteveMunch01.github.io" class="btn btn-primary">Go somewhere</a>
+                                            <p class="card-text snow-color">With supporting text below as a natural lead-in to additional content.</p>
+                                            <a href="https://github.com/SteveMunch01/SteveMunch01.github.io" class="btn" target="_blank">
+                                                <i class="devicon-github-plain colored snow-color"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="ml-2 mr-2">
-                                    <div class="card">
+                                    <div class="card border border-light transbox snow-color">
                                         <div class="card-header">
-                                            Poke-Help
+                                            <h2 class="w-100 text-center">
+                                                Poke-Help
+                                            </h2>
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title">Special title treatment</h5>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            <p class="card-text snow-color">With supporting text below as a natural lead-in to additional content.</p>
+                                            <a href="https://github.com/SteveMunch01/Poke-Help" class="btn" target="_blank">
+                                                <i class="devicon-github-plain colored snow-color"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="ml-2 mr-2">
-                                    <div class="card">
+                                    <div class="card border border-light transbox snow-color">
                                         <div class="card-header">
-                                            Ocra
+                                            <h2 class="w-100 text-center">
+                                                Ocra
+                                            </h2>
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title">Special title treatment</h5>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            <p class="card-text snow-color">With supporting text below as a natural lead-in to additional content.</p>
+                                            <a href="https://github.com/SteveMunch01/Ocra" class="btn" target="_blank">
+                                                <i class="devicon-github-plain colored snow-color"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="ml-2 mr-2">
-                                    <div class="card">
+                                    <div class="card border border-light transbox snow-color">
                                         <div class="card-header">
                                             PlaceHolder rn
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title">Special title treatment</h5>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <p class="card-text snow-color">With supporting text below as a natural lead-in to additional content.</p>
                                             <a href="#" class="btn btn-primary">Go somewhere</a>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="row min-vh-100 w-100 d-flex flex-column" id="experience">
-                <div class="w-100 m-20 align-self-center flex-grow-1 d-flex flex-column align-items-center">
-                    <h3 class="w-100 text-center mt-5">Experience</h3>
-                    <div class="container mt-5 mb-5 w-100">
-                            <div class="owl-carousel owl-theme">
-                                    <div class="ml-2 mr-2">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                Personal Website
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Somestuff</h5>
-                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                                                    lots and lots and lots and lots and lots of content
-                                                </p>
-                                                <a href="https://github.com/SteveMunch01/SteveMunch01.github.io" class="btn btn-primary">Go somewhere</a>
-                                            </div>
-                                        </div>
+
+            <section class="min-vh-100 w-100 d-flex" id="experience">
+                <div class="w-100 d-flex flex-grow-1 flex-column align-items-center justify-content-center">
+                    <h1 class="w-100 text-center mt-5">Experience</h1>
+                    <br>
+                    <br>
+                    <div class="container-fluid w-100 h-50">
+                        <div class="owl-carousel owl-theme">
+                            <div class="ml-2 mr-2">
+                                <div class="card border border-light transbox snow-color">
+                                    <div class="card-header">
+                                        <h2 class="w-100 text-center">
+                                            Personal Website
+                                        </h2>
                                     </div>
-                                    <div class="ml-2 mr-2">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                Poke-Help
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Special title treatment</h5>
-                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ml-2 mr-2">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                Ocra
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Special title treatment</h5>
-                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ml-2 mr-2">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                PlaceHolder rn
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Special title treatment</h5>
-                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                                            </div>
-                                        </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Somestuff</h5>
+                                        <p class="card-text snow-color">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="https://github.com/SteveMunch01/SteveMunch01.github.io" class="btn" target="_blank">
+                                            <i class="devicon-github-plain colored snow-color"></i>
+                                        </a>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="ml-2 mr-2">
+                                <div class="card border border-light transbox snow-color">
+                                    <div class="card-header">
+                                        <h2 class="w-100 text-center">
+                                            Poke-Help
+                                        </h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Special title treatment</h5>
+                                        <p class="card-text snow-color">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="https://github.com/SteveMunch01/Poke-Help" class="btn" target="_blank">
+                                            <i class="devicon-github-plain colored snow-color"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ml-2 mr-2">
+                                <div class="card border border-light transbox snow-color">
+                                    <div class="card-header">
+                                        <h2 class="w-100 text-center">
+                                            Ocra
+                                        </h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Special title treatment</h5>
+                                        <p class="card-text snow-color">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="https://github.com/SteveMunch01/Ocra" class="btn" target="_blank">
+                                            <i class="devicon-github-plain colored snow-color"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ml-2 mr-2">
+                                <div class="card">
+                                    <div class="card-header">
+                                        PlaceHolder rn
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Special title treatment</h5>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
                 </div>
             </section>
-            <section class="row min-vh-100 w-100 d-flex flex-column" id="contact">
-                <div class="w-100 m-20 align-self-center flex-grow-1 d-flex flex-column align-items-center">
-                    <h3 class="w-100 text-center mt-5">Contact me</h3>
-                    <h4 class="w-100 text-center">If you have any questions, please feel free to contanct me :)</h4>
+
+            <section class="min-vh-100 w-100 d-flex" id="contact">
+                <div class="w-100 d-flex flex-column align-items-center justify-content-center">
+                    <h3 class="text-center">Contact me</h3>
+                    <h4 class="text-center">If you have any questions, please feel free to contact me :)</h4>
                     <br>
                     <br>
-                    <div class="row w-100 d-flex flex-column align-items-center justify-content-center">
+                    <div class="w-100 d-flex justify-content-center">
                         <form class="form-stuff" action="https://formspree.io/stephenyhlin@hotmail.com" method="POST">
                             <div class="form-row">
                                 <div class="form-group col-sm">
                                     <label for="name-label">Name</label>
                                     <input type="name" name="name" class="form-control" id="name-label" placeholder="Name" required>
                                 </div>
-                                <div class="form-group col-sm" >
+                                <div class="form-group col-sm">
                                     <label for="email-label">Email address</label>
                                     <input type="email" name="email" class="form-control" id="email-label" placeholder="Email" required>
                                 </div>
-                                
                             </div>
                             <div class="form-group">
                                 <label for="text-message">Your message</label>
-                                <textarea name="message" class="form-control" id="text-message" placeholder="Message" rows="3"></textarea>
+                                <textarea name="message" class="form-control" id="text-message" placeholder="Message" rows="3" required></textarea>
                             </div>
-                            <input class="btn btn-light p-10 button-size" type="submit" value="Send">
+                            <input class="btn btn-light button-size" type="submit" value="Send">
                         </form>
                     </div>    
                 </div>
             </section>
-            <section class="row min-vh-100 w-100 d-flex flex-column" id="about">
+            
+            <section class="min-vh-100 w-100 d-flex" id="about">
                 <div class="w-100 m-20 align-self-center flex-grow-1 d-flex flex-column align-items-center justify-content-center">
                     <h3 class="w-100 text-center mt-5">About Me</h3>
-                    <button type="button" class="btn btn-light"> :)</button>
+                    <button type="button" class="btn snow-color"> :)</button>
                 </div>
             </section>
-            
         </div>
     </div>
-
-
 
 
     <!-- Optional JavaScript -->
@@ -242,5 +269,6 @@
     <script src="component/scripts/stars.js"></script>
     <script src="component/scripts/scroll.js"></script>
     <script src="component/scripts/carousel.js"></script>
+    
 </body>
 </html>
