@@ -33,7 +33,7 @@ a.active{
     color: snow !important;
 }
 
-.btn .snow-color:hover{
+.btn .snow-color:hover, .fa-youtube:hover{
     /* color: snow; */
     filter: brightness(85%);
 }
