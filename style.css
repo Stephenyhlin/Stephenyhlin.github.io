@@ -109,8 +109,9 @@ canvas {
     position: absolute;
     width: 26px;
     cursor: pointer;
-    top: 100px !important;
-  }
+    top: 175px !important;
+}
+
 .owl-carousel .nav-btn i {
     color: snow !important; 
 }
