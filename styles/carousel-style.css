@@ -1,0 +1,30 @@
+.owl-carousel .nav-btn{
+    height: 47px;
+    position: absolute;
+    width: 26px;
+    cursor: pointer;
+    top: 175px !important;
+}
+
+.owl-carousel .nav-btn i {
+    color: snow !important; 
+}
+  
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled{
+pointer-events: none;
+opacity: 0.2;
+}
+
+.owl-carousel .prev-slide{
+left: -20px;
+}
+.owl-carousel .next-slide{
+right: -20px;
+}
+.owl-carousel .prev-slide:hover{
+background-position: 0px -53px;
+}
+.owl-carousel .next-slide:hover{
+background-position: -24px -53px;
+}
