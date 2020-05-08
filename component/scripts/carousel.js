@@ -1,7 +1,8 @@
 $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:10,
+    margin:50,
     nav:true,
+    dots:false,
     responsive:{
         0:{
             items:1
@@ -12,5 +13,8 @@ $('.owl-carousel').owlCarousel({
         1000:{
             items:3
         }
-    }
+    },
+    navText : ["<div class='nav-btn prev-slide'><i class='fa fa-chevron-left'></i></div>",
+    "<div class='nav-btn next-slide'><i class='fa fa-chevron-right'></i></div>"]
+
 })
