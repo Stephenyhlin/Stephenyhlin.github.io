@@ -1,6 +1,6 @@
 # Personal Site
 
-A personal website built to showcase some information about me
+A personal website built to display my portfolio
 
 ## Stack used
 - Bootstrap
@@ -11,15 +11,11 @@ A personal website built to showcase some information about me
 - Formspree 
 
 ## Features included
-- Scrolling to certain sections
-- Carousel display of projects
-- A space like background full of stars 
+- Scrolling to specific sections
+- Carousel display of projects, activities and experiences
+- A space like background full of stars using Canvas Library
 - Contact form
 
 ## ToDo
-- Add Experience
-- Change Owl carosuel Buttons
-- Add projects
-- Add a Favicon
 - Change resume to the most up to date resume
 - Update linkedIn
